@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 jdk8 stream example
 
  */
-public class StreamExample {
+public class StreamingExample {
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();

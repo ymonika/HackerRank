@@ -1,4 +1,4 @@
-package com;
+package com.jdk8;
 
 import java.util.*;
 
