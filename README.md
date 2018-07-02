@@ -1,19 +1,21 @@
 # JavaProgrammingExamples
 
 ###### jdk8:
--###### Comparator
+###### -Comparator
 
--###### FunctionalInterface
+###### -FunctionalInterface
 
--###### Predicate Examples
+###### -Predicate Examples
 
--###### Streaming
+###### -Consumer Examples
+
+###### -Streaming
 
 
 ###### Practice Programs:
--###### LetterOccurrenceExample
+###### -LetterOccurrenceExample
 
--###### NestedClassExamples.java
+###### -NestedClassExamples.java
 
 
 

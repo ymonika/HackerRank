@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/*
-jdk8 stream example
-
- */
 public class StreamingExample {
 
     public static void main(String[] args) {
@@ -18,9 +14,7 @@ public class StreamingExample {
         List<String> list1 = list.stream()
                     .map(str -> str + str)
                     .filter(s -> s.length() > 2)
-                    .collect(Collectors.toList());
-
+                    .collect(Collectors.toCollection(ArrayList::new));
         System.out.println(list1);
-
     }
 }

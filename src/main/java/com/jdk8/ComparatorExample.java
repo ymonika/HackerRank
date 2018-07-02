@@ -1,6 +1,7 @@
 package com.jdk8;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /*
 jdk8 Examples:
@@ -26,10 +27,10 @@ public class ComparatorExample {
             String[] dvdInfo = line.split("/");
             list.add(new DVDInfo(dvdInfo[0], dvdInfo[1], dvdInfo[2]));
         }
-        Collections.sort(list, Comparator.comparing(DVDInfo::getLeadActor).thenComparing(DVDInfo::getGenre).thenComparing(DVDInfo::getTitle).reversed());
-
+        Collections.sort(list, Comparator.comparing(DVDInfo::getLeadActor)
+                                            .thenComparing(DVDInfo::getGenre)
+                                            .thenComparing(DVDInfo::getTitle).reversed());
         System.out.println(Arrays.asList(list.toArray()));
-
     }
 }
 
