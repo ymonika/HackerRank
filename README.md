@@ -28,6 +28,6 @@ Sort without using any build-in methods
 ###### -BatchPaginationExample.java :
 Divide given list into some fix no. of sublist
 
-If you find this programs useful then please give a star.
+If you find this programs helpful then please hit star button.
 
 
