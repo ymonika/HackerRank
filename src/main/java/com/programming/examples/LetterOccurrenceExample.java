@@ -14,7 +14,7 @@ Output: a2b2c8abab4
 public class LetterOccurrenceExample {
 
     public static void main(String[] args) {
-        String str = "aabbccccccccababbbb";
+        String str = "bookkeeper";
         str = str + " ";
         char previous = str.charAt(0);
         String printString = "";
