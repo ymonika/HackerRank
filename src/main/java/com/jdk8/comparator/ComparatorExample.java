@@ -1,7 +1,6 @@
-package com.jdk8;
+package com.jdk8.comparator;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /*
 jdk8 Examples:
