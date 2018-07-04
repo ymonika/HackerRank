@@ -1,4 +1,4 @@
-package com.jdk8.comparator;
+package com.programming.examples;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -9,7 +9,7 @@ public class SortWithoutUsingComparator {
     public static void main(String[] args) {
         String[] array = {"a", "beb", "bea", "zd", "xf"};
 
-       /* for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             for (int j = i+1; j < array.length; j++) {
                 String iStr = array[i];
                 String jStr = array[j];
@@ -23,10 +23,10 @@ public class SortWithoutUsingComparator {
 
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
-        }*/
+        }
 
         List<String> list = Arrays.asList(array);
-        //list.sort(String::compareTo);
+        list.sort(String::compareTo);
         list.sort(Comparator.naturalOrder());
         System.out.println(list);
     }
