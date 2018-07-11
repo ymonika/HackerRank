@@ -1,6 +1,6 @@
 # JavaProgrammingExamples
 
-###### jdk8:
+###### jdk8-NewFeatures:
 ###### -Comparator
 
 ###### -FunctionalInterface
@@ -12,7 +12,7 @@
 ###### -Streaming
 
 
-###### Below are some java practice Programs I have added:
+###### Below are some Java practice Programs I have added:
 ###### -LetterOccurrenceExample.java
 Count no. of occurrences of a char in a String and print it with String
 e.g.
@@ -27,7 +27,3 @@ Sort without using any build-in methods
 
 ###### -BatchPaginationExample.java :
 Divide given list into some fix no. of sublist
-
-If you find this programs helpful then please hit star button.
-
-

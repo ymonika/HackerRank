@@ -1,0 +1,38 @@
+group 'jdk8examples'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'gs-jdk8-examples'
+    version = '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework:springloaded:1.2.6.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile "joda-time:joda-time:2.2"
+    compile("org.springframework.boot:spring-boot-starter-aop")
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+}
