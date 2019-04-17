@@ -1,4 +1,4 @@
-# JavaProgrammingExamples
+# HackerRank
 
 ###### jdk8-NewFeatures:
 ###### -Comparator
