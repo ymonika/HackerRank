@@ -1,4 +1,4 @@
-rootProject.name='JavaProgrammingExamples'
+rootProject.name='HackerRank'
 
 include 'jdk8examples'
 include 'PracticePrograms'
