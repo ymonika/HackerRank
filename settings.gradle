@@ -1,4 +1,4 @@
 rootProject.name='HackerRank'
 
-include 'jdk8examples'
+include 'jdk8-NewFeatures'
 include 'PracticePrograms'

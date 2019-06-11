@@ -26,48 +26,10 @@ public class ComparatorExample {
             String[] dvdInfo = line.split("/");
             list.add(new DVDInfo(dvdInfo[0], dvdInfo[1], dvdInfo[2]));
         }
-        Collections.sort(list, Comparator.comparing(DVDInfo::getLeadActor)
+        /*Collections.sort(list, Comparator.comparing(DVDInfo::getLeadActor)
                                             .thenComparing(DVDInfo::getGenre)
-                                            .thenComparing(DVDInfo::getTitle).reversed());
+                                            .thenComparing(DVDInfo::getTitle).reversed());*/
+        Collections.sort(list, Comparator.comparing(DVDInfo::getTitle).reversed());
         System.out.println(Arrays.asList(list.toArray()));
     }
-}
-
-class DVDInfo {
-
-    String title;
-    String genre;
-    String leadActor;
-    DVDInfo(String t, String g, String a) {
-        title = t; genre = g; leadActor = a;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public String getLeadActor() {
-        return leadActor;
-    }
-
-    public void setLeadActor(String leadActor) {
-        this.leadActor = leadActor;
-    }
-
-    public String toString() {
-        return leadActor + " : " + genre + " : " + title + "\n";
-    }
-
 }

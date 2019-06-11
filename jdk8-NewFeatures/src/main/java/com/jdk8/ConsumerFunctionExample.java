@@ -3,6 +3,7 @@ package com.jdk8;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class ConsumerFunctionExample {
 
@@ -14,6 +15,8 @@ public class ConsumerFunctionExample {
                 new Integer(0));
         integerList.forEach(i -> consumer.accept(i));
 
+        Supplier<Integer> supplier = () -> new Integer(0);
+        consumer.accept(supplier.get());
     }
 
 }
