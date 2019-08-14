@@ -127,13 +127,13 @@ public class DataStructure {
 
         /*Function<Integer, Boolean> evenFunc = i -> i%2 == 0 ? true : false;
         Function<Integer, Boolean> oddFun = i -> i%2 == 1 ? true : false;*/
-        // Fill the array with integer values and print out only
+        // Fill the array with integer values and concat out only
         // values of even indices
         DataStructure ds = new DataStructure();
         ds.printEven();
         ds.print(ds.new EvenIterator());
-        /*ds.print(evenFun);
-        ds.print(oddFun);*/
+        /*ds.concat(evenFun);
+        ds.concat(oddFun);*/
         ds.print(DataStructure::isEvenIndex);
         ds.print(DataStructure::isOddIndex);
     }
